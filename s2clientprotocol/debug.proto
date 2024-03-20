@@ -84,7 +84,7 @@ enum DebugGameState {
 
 message DebugCreateUnit {
   uint32 unit_type = 1;
-  int32 owner = 2;
+  uint32 owner = 2;
   Point2D pos = 3;
   uint32 quantity = 4;
 }

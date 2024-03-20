@@ -45,7 +45,7 @@ message ResponseQueryAvailableAbilities {
 
 //--------------------------------------------------------------------------------------------------
 message RequestQueryBuildingPlacement {
-  int32 ability_id = 1;
+  uint32 ability_id = 1;
   Point2D target_pos = 2;
   uint64 placing_unit_tag = 3;             // Not required
 }

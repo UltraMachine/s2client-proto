@@ -105,7 +105,7 @@ message Unit {
 
   uint64 tag = 3;                  // Unique identifier for a unit
   uint32 unit_type = 4;
-  int32 owner = 5;
+  uint32 owner = 5;
 
   Point pos = 6;
   float facing = 7;
@@ -167,7 +167,7 @@ message Effect {
   uint32 effect_id = 1;
   repeated Point2D pos = 2;                     // Effect may impact multiple locations. (eg. Lurker attack)
   Alliance alliance = 3;
-  int32 owner = 4;
+  uint32 owner = 4;
   float radius = 5;
 }
 
@@ -185,7 +185,7 @@ message ActionRaw {
 }
 
 message ActionRawUnitCommand {
-  int32 ability_id = 1;
+  uint32 ability_id = 1;
   oneof target {
     Point2D target_world_space_pos = 2;
     uint64 target_unit_tag = 3;
@@ -199,6 +199,6 @@ message ActionRawCameraMove {
 }
 
 message ActionRawToggleAutocast {
-  int32 ability_id = 1;
+  uint32 ability_id = 1;
   repeated uint64 unit_tags = 2;
 }

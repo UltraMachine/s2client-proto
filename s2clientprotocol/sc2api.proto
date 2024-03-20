@@ -276,7 +276,7 @@ message RequestStartReplay {
     bytes replay_data = 5;
   }
   bytes map_data = 6;                      // Overrides the map path stored in the replay.
-  int32 observed_player_id = 2;
+  uint32 observed_player_id = 2;
   InterfaceOptions options = 3;
 
   bool disable_fog = 4;
@@ -659,7 +659,7 @@ message ActionChat {
 
 message ActionError {
   uint64 unit_tag = 1;                             // Only populated when using raw interface.
-  uint64 ability_id = 2;
+  uint32 ability_id = 2;
   ActionResult result = 3;
 }
 
