@@ -68,7 +68,7 @@ enum DisplayType {
 
 enum Alliance {
   AllianceUnset = 0; // Missing value
-  Self = 1;
+  Own = 1;
   Ally = 2;
   Neutral = 3;
   Enemy = 4;
