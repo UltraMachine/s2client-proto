@@ -52,8 +52,8 @@ message PlayerRaw {
 message UnitOrder {
   uint32 ability_id = 1;
   oneof target {
-    Point target_world_space_pos = 2;
-    uint64 target_unit_tag = 3;
+    Point world_space_pos = 2;
+    uint64 unit_tag = 3;
   }
   float progress = 4;              // Progress of train abilities. Range: [0.0, 1.0]
 }
@@ -187,8 +187,8 @@ message ActionRaw {
 message ActionRawUnitCommand {
   uint32 ability_id = 1;
   oneof target {
-    Point2D target_world_space_pos = 2;
-    uint64 target_unit_tag = 3;
+    Point2D world_space_pos = 2;
+    uint64 unit_tag = 3;
   }
   repeated uint64 unit_tags = 4;
   bool queue_command = 5;
