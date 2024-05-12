@@ -718,8 +718,8 @@ enum Alert {
   WarpInComplete = 22;
 }
 
-enum Result {
-  ResultUnset = 0; // Missing value
+enum GameResult {
+  GameResultUnset = 0; // Missing value
   Victory = 1;
   Defeat = 2;
   Tie = 3;
@@ -728,5 +728,5 @@ enum Result {
 
 message PlayerResult {
   uint32 player_id = 1;
-  Result result = 2;
+  GameResult result = 2;
 }
