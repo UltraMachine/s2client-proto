@@ -64,7 +64,7 @@ message Weapon {
     Air = 2;
     Any = 3;
   }
-  TargetType type = 1;
+  TargetType target = 1;
   float damage = 2;
   repeated DamageBonus damage_bonus = 3;
   uint32 attacks = 4;              // Number of hits per attack. (eg. Colossus has 2 beams)
